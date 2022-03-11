@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import type { NextPage } from 'next';
 import React, { useState } from 'react';
-import api from '../../config/api';
+import api from '../config/api';
 
 const B: NextPage = () => {
   const [inp, setInp] = useState<number>(0);
