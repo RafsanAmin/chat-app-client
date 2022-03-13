@@ -12,11 +12,13 @@ const B: NextPage = () => {
       method: 'POST',
       credentials: 'include',
     });
+    console.log(resp);
     const answ = await resp.json();
     setAns(answ.ans);
   };
   return (
     <div>
+      <img src={`${api}p1.png`} alt="not working" />
       <input
         onChange={(e) => {
           setInp(Number(e.target.value) || 0);
